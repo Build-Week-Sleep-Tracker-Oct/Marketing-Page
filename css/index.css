@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: source-code-pro, monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: source-code-pro, monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #783DAC;
+}
+.topdiv {
+  display: flex;
+  justify-content: space-between;
+}
+.topdiv .top-text {
+  width: 40%;
+}
+.topdiv .top-image {
+  width: 30%;
+  height: 30%;
+  margin-left: 40%;
+}
+.laptop {
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+}
+.mid-div {
+  margin: 0 auto;
+}
+.one {
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 1%;
+  border: 2px red solid;
+}
+.two {
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 2px red solid;
+}
+.three {
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 2px red solid;
+}
+.four {
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+  border: 2px red solid;
+}
+.btmdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
