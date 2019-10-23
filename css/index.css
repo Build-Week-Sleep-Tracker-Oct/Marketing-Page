@@ -1,41 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
   color: white;
+  background-color: #431070;
 }
 html,
 body {
-  font-family: source-code-pro, monospace;
-  font-weight: 700;
-  font-style: normal;
+  font-family: azo-sans-web, sans-serif;
+  color: white;
+  background-color: #431070;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: source-code-pro, monospace;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 4rem;
-}
-h3 {
+h1 {
+  font-family: azo-sans-web, sans-serif;
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
+  font-size: 3rem;
 }
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
+h2 {
+  font-size: 3rem;
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   padding-bottom: 10px;
+  color: white;
 }
 img {
   max-width: 100%;
@@ -44,19 +163,16 @@ img {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-width: 100%;
   width: 100%;
-  margin: 0 auto;
-  background-color: #431070;
 }
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding-top: 3%;
   padding-bottom: 3%;
-  padding-left: 3%;
+  padding-left: 4%;
   padding-right: 3%;
 }
 .nav-container #somnus {
@@ -64,11 +180,41 @@ img {
   color: white;
   margin: 0;
 }
+.nav-container .classnav {
+  width: 54%;
+}
 .nav-container .classnav a {
   text-decoration: none;
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 4rem;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 0;
 }
-.nav-container .classnav button {
+.nav-container .classnav #sign-up {
+  font-size: 2.4rem;
   text-decoration: none;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  border: solid;
+  border-radius: 4px;
+  background-color: #431070;
+  color: #FFBA08;
+}
+.nav-container .classnav #sign-in {
+  font-size: 2.4rem;
+  text-decoration: none;
+  margin-right: 0%;
+  margin-left: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  border: #FFBA08 solid;
+  border-radius: 4px;
+  background-color: #FFBA08;
+  color: #431070;
 }
 .footer {
   display: flex;
@@ -88,57 +234,81 @@ img {
   height: 100%;
   width: 100%;
 }
-.topdiv {
+.container {
+  width: 100%;
+}
+.container .topdiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(180deg, #431070 47.69%, #7D41B2 85.45%);
-  padding-bottom: 8%;
-  padding-left: 3%;
-  border: 2px red solid;
+  padding-top: 0%;
+  padding-bottom: 9%;
+  padding-left: 4%;
+  margin: 0;
 }
-.topdiv .top-text {
-  border: 2px red solid;
+.container .topdiv .top-text h1 {
+  width: 80%;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
-.topdiv .top-text h3 {
+.container .topdiv .top-text p {
+  width: 90%;
+}
+.container .topdiv .moon-image {
   width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-right: 1%;
 }
-.topdiv .top-text p {
-  width: 100%;
-}
-.topdiv .top-image {
-  width: 120%;
-  height: 120%;
-  margin-left: 40%;
-  border: 2px red solid;
-}
-.laptop {
+.container .laptop {
   margin: 0 auto;
   margin-top: -8%;
   height: 100%;
   width: 80%;
-  border: 2px red solid;
 }
-.mid-div {
-  padding-top: 8%;
-  padding-bottom: 8%;
+.container .mid-div {
+  padding-top: 10%;
+  padding-bottom: 10%;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
 }
-.one {
+.container .one {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 1%;
-  border: 2px red solid;
   background-color: #783DAC;
 }
-.one p {
-  width: 30%;
+.container .one img {
+  height: 225px;
+  width: 225px;
 }
-.two {
+.container .one p {
+  width: 30%;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+.container .two {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: #783DAC;
+}
+.container .two img {
+  height: 25%;
+  width: 25%;
+}
+.container .two p {
+  width: 46%;
+}
+.container .three {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -146,46 +316,34 @@ img {
   padding-bottom: 2%;
   margin-top: 1%;
   margin-bottom: 1%;
-  border: 2px red solid;
   background-color: #783DAC;
 }
-.two p {
-  width: 30%;
+.container .three img {
+  height: 225px;
+  width: 225px;
 }
-.three {
+.container .three p {
+  width: 50%;
+}
+.container .four {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   margin-top: 1%;
-  margin-bottom: 1%;
-  border: 2px red solid;
   background-color: #783DAC;
 }
-.three p {
-  width: 30%;
+.container .four p {
+  width: 40%;
 }
-.four {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-top: 1%;
-  border: 2px red solid;
-  background-color: #783DAC;
-}
-.four p {
-  width: 30%;
-}
-.btmdiv {
+.container .btmdiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
 }
-.btmdiv button {
+.container .btmdiv button {
   display: block;
   width: 20%;
   height: 5rem;
