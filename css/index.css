@@ -181,7 +181,7 @@ img {
   margin: 0;
 }
 .nav-container .classnav {
-  width: 54%;
+  width: 650px;
 }
 .nav-container .classnav a {
   text-decoration: none;
@@ -216,26 +216,24 @@ img {
   background-color: #FFBA08;
   color: #431070;
 }
-#btm-img {
-  margin: 0 auto ;
-  margin-top: -100px;
-}
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  padding-top: 15%;
-  padding-bottom: 10%;
+  padding-top: 10%;
+  padding-bottom: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
   background: #8b3ad6;
 }
 .footer .classnav {
-  width: 60%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
 }
 .footer .classnav a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: white;
   text-decoration: none;
 }
@@ -245,9 +243,14 @@ img {
   flex-direction: column;
   align-items: center;
 }
+.footer .social img {
+  height: 50%;
+}
 .footer .social h3 {
-  width: 90%;
+  width: 60%;
+  font-size: 0.8rem;
   text-align: center;
+  padding-bottom: 2%;
 }
 .container {
   width: 100%;
@@ -262,6 +265,9 @@ img {
   padding-left: 4%;
   margin: 0;
 }
+.container .topdiv .top-text {
+  width: 62%;
+}
 .container .topdiv .top-text h1 {
   width: 80%;
   margin-bottom: 5%;
@@ -271,10 +277,13 @@ img {
   width: 90%;
 }
 .container .topdiv .moon-image {
-  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid red;
+}
+.container .topdiv .moon-image img {
+  position: absolute;
   height: 100%;
-  margin-left: 0%;
-  margin-right: 1%;
 }
 .container .laptop {
   margin: 0 auto;
@@ -294,7 +303,7 @@ img {
   align-items: center;
   padding-top: 2%;
   padding-bottom: 2%;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   background-color: #783DAC;
 }
 .container .one img {
@@ -312,8 +321,8 @@ img {
   align-items: center;
   padding-top: 7%;
   padding-bottom: 7%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   background-color: #783DAC;
 }
 .container .two img {
@@ -329,8 +338,8 @@ img {
   align-items: center;
   padding-top: 2%;
   padding-bottom: 2%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   background-color: #783DAC;
 }
 .container .three img {
@@ -346,7 +355,7 @@ img {
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
-  margin-top: 1%;
+  margin-top: 2%;
   background-color: #783DAC;
 }
 .container .four p {
@@ -356,18 +365,27 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 15%;
+  padding-bottom: 0%;
   margin: 0 auto;
-  height: 500px;
+  height: 300px;
 }
 .container .btmdiv button {
   display: block;
   width: 20%;
   height: 5rem;
-  margin: 5% auto;
+  margin: 2% auto;
   border: none;
   border-radius: 6px;
   background-color: #4A90E2;
   font-size: 2rem;
   color: white;
   text-align: center;
+}
+.container #btm-img {
+  margin: 0 auto;
+  margin-bottom: -190px;
+  height: 400px;
+  width: 400px;
+  z-index: 0;
 }
