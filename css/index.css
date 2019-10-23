@@ -216,23 +216,38 @@ img {
   background-color: #FFBA08;
   color: #431070;
 }
+#btm-img {
+  margin: 0 auto ;
+  margin-top: -100px;
+}
 .footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  background: #8b3ad6;
 }
 .footer .classnav {
-  width: 30%;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 .footer .classnav a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   text-decoration: none;
 }
 .footer .social {
   height: 100%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .social h3 {
+  width: 90%;
+  text-align: center;
 }
 .container {
   width: 100%;
@@ -342,6 +357,7 @@ img {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  height: 500px;
 }
 .container .btmdiv button {
   display: block;
