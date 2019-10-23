@@ -224,24 +224,25 @@ img {
   width: 100%;
 }
 .contact-container .contact-top {
-  width: 400px;
-  height: 400px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
-}
-.contact-container .contact-top .contact-us {
-  height: 500px;
-  width: 500px;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 10%;
+  background-color: #8b3ad6;
 }
 .contact-container .contact-top .contact-image img {
-  width: 200px;
-  height: 200px;
+  width: 730px;
+  height: 500px;
 }
 .contact-container .contact-form {
   margin: 0 auto;
   margin-bottom: -220px;
+  margin-top: -150px;
   width: 90%;
+  height: 80%;
   padding-right: 1%;
   padding-left: 1%;
   padding-top: 5%;
@@ -256,7 +257,7 @@ img {
   text-align: center;
   padding-top: 11%;
   padding-bottom: 11%;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
 }
 .contact-container .contact-form form .field {
   display: flex;
@@ -284,8 +285,12 @@ img {
   display: flex;
   flex-direction: column;
 }
+.contact-container .contact-form form #msg label {
+  font-size: 2rem;
+}
 .contact-container .contact-form form #msg textarea {
-  height: 400px;
+  height: 300px;
+  margin-top: 3%;
 }
 .footer-container {
   display: flex;
@@ -296,7 +301,7 @@ img {
   margin-bottom: -190px;
   height: 400px;
   width: 400px;
-  z-index: 0;
+  z-index: 1;
 }
 .footer-container .footer {
   display: flex;
