@@ -216,37 +216,49 @@ img {
   background-color: #FFBA08;
   color: #431070;
 }
-.footer {
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-container #btm-img {
+  margin-bottom: -190px;
+  height: 400px;
+  width: 400px;
+  z-index: 0;
+}
+.footer-container .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  width: 100%;
   padding-top: 10%;
   padding-bottom: 3%;
   padding-left: 2%;
   padding-right: 2%;
   background: #8b3ad6;
 }
-.footer .classnav {
+.footer-container .footer .classnav {
   width: 30%;
   display: flex;
   justify-content: space-around;
 }
-.footer .classnav a {
+.footer-container .footer .classnav a {
   font-size: 1.6rem;
   color: white;
   text-decoration: none;
 }
-.footer .social {
+.footer-container .footer .social {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.footer .social img {
+.footer-container .footer .social img {
   height: 50%;
 }
-.footer .social h3 {
+.footer-container .footer .social h3 {
   width: 60%;
   font-size: 0.8rem;
   text-align: center;
@@ -260,7 +272,7 @@ img {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(180deg, #431070 47.69%, #7D41B2 85.45%);
-  padding-top: 0%;
+  padding-top: 4%;
   padding-bottom: 9%;
   padding-left: 4%;
   margin: 0;
@@ -279,11 +291,9 @@ img {
 .container .topdiv .moon-image {
   overflow: hidden;
   position: relative;
-  border: 2px solid red;
 }
 .container .topdiv .moon-image img {
-  position: absolute;
-  height: 100%;
+  width: 400px;
 }
 .container .laptop {
   margin: 0 auto;
@@ -381,11 +391,4 @@ img {
   font-size: 2rem;
   color: white;
   text-align: center;
-}
-.container #btm-img {
-  margin: 0 auto;
-  margin-bottom: -190px;
-  height: 400px;
-  width: 400px;
-  z-index: 0;
 }
