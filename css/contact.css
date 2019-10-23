@@ -132,13 +132,11 @@ table {
 html {
   font-size: 62.5%;
   color: white;
-  background-color: #431070;
 }
 html,
 body {
   font-family: azo-sans-web, sans-serif;
   color: white;
-  background-color: #431070;
 }
 h1 {
   font-family: azo-sans-web, sans-serif;
@@ -170,10 +168,12 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: -10px;
   padding-top: 3%;
   padding-bottom: 3%;
   padding-left: 4%;
   padding-right: 3%;
+  background-color: #431070;
 }
 .nav-container #somnus {
   font-family: 'Pacifico', cursive;
@@ -216,6 +216,81 @@ img {
   background-color: #FFBA08;
   color: #431070;
 }
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+}
+.contact-container .contact-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 10%;
+  background-color: #8b3ad6;
+}
+.contact-container .contact-top .contact-image img {
+  width: 730px;
+  height: 500px;
+}
+.contact-container .contact-form {
+  margin: 0 auto;
+  margin-bottom: -220px;
+  margin-top: -150px;
+  width: 90%;
+  height: 80%;
+  padding-right: 1%;
+  padding-left: 1%;
+  padding-top: 5%;
+  padding-bottom: 15%;
+  background-color: #431070;
+}
+.contact-container .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact-form form h2 {
+  text-align: center;
+  padding-top: 11%;
+  padding-bottom: 11%;
+  font-size: 2.3rem;
+}
+.contact-container .contact-form form .field {
+  display: flex;
+}
+.contact-container .contact-form form .field #name-subject {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+.contact-container .contact-form form .field #mail {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact-form form .field label {
+  font-size: 2rem;
+}
+.contact-container .contact-form form .field input {
+  width: 400px;
+  height: 50px;
+  margin-top: 9%;
+  margin-bottom: 9%;
+}
+.contact-container .contact-form form #msg {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact-form form #msg label {
+  font-size: 2rem;
+}
+.contact-container .contact-form form #msg textarea {
+  height: 300px;
+  margin-top: 3%;
+}
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -225,7 +300,7 @@ img {
   margin-bottom: -190px;
   height: 400px;
   width: 400px;
-  z-index: 0;
+  z-index: 1;
 }
 .footer-container .footer {
   display: flex;
@@ -263,132 +338,4 @@ img {
   font-size: 0.8rem;
   text-align: center;
   padding-bottom: 2%;
-}
-.container {
-  width: 100%;
-}
-.container .topdiv {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(180deg, #431070 47.69%, #7D41B2 85.45%);
-  padding-top: 4%;
-  padding-bottom: 9%;
-  padding-left: 4%;
-  margin: 0;
-}
-.container .topdiv .top-text {
-  width: 62%;
-}
-.container .topdiv .top-text h1 {
-  width: 80%;
-  margin-bottom: 5%;
-  margin-top: 5%;
-}
-.container .topdiv .top-text p {
-  width: 90%;
-}
-.container .topdiv .moon-image {
-  overflow: hidden;
-  position: relative;
-}
-.container .topdiv .moon-image img {
-  width: 400px;
-}
-.container .laptop {
-  margin: 0 auto;
-  margin-top: -8%;
-  height: 100%;
-  width: 80%;
-}
-.container .mid-div {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  margin: 0 auto;
-  width: 95%;
-}
-.container .one {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-bottom: 2%;
-  background-color: #783DAC;
-}
-.container .one img {
-  height: 225px;
-  width: 225px;
-}
-.container .one p {
-  width: 30%;
-  margin-left: 9%;
-  margin-right: 9%;
-}
-.container .two {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 7%;
-  padding-bottom: 7%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  background-color: #783DAC;
-}
-.container .two img {
-  height: 25%;
-  width: 25%;
-}
-.container .two p {
-  width: 46%;
-}
-.container .three {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  background-color: #783DAC;
-}
-.container .three img {
-  height: 225px;
-  width: 225px;
-}
-.container .three p {
-  width: 50%;
-}
-.container .four {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin-top: 2%;
-  background-color: #783DAC;
-}
-.container .four p {
-  width: 40%;
-}
-.container .btmdiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 15%;
-  padding-bottom: 0%;
-  margin: 0 auto;
-  height: 300px;
-}
-.container .btmdiv button {
-  display: block;
-  width: 20%;
-  height: 5rem;
-  margin: 2% auto;
-  border: none;
-  border-radius: 6px;
-  background-color: #4A90E2;
-  font-size: 2rem;
-  color: white;
-  text-align: center;
 }
