@@ -95,10 +95,6 @@ img {
   background: linear-gradient(180deg, #431070 47.69%, #7D41B2 85.45%);
   padding-bottom: 8%;
   padding-left: 3%;
-  border: 2px red solid;
-}
-.topdiv .top-text {
-  border: 2px red solid;
 }
 .topdiv .top-text h3 {
   width: 100%;
@@ -110,14 +106,12 @@ img {
   width: 120%;
   height: 120%;
   margin-left: 40%;
-  border: 2px red solid;
 }
 .laptop {
   margin: 0 auto;
   margin-top: -8%;
   height: 100%;
   width: 80%;
-  border: 2px red solid;
 }
 .mid-div {
   padding-top: 8%;
@@ -132,7 +126,6 @@ img {
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 1%;
-  border: 2px red solid;
   background-color: #783DAC;
 }
 .one p {
@@ -146,7 +139,6 @@ img {
   padding-bottom: 2%;
   margin-top: 1%;
   margin-bottom: 1%;
-  border: 2px red solid;
   background-color: #783DAC;
 }
 .two p {
@@ -160,7 +152,6 @@ img {
   padding-bottom: 2%;
   margin-top: 1%;
   margin-bottom: 1%;
-  border: 2px red solid;
   background-color: #783DAC;
 }
 .three p {
@@ -173,7 +164,6 @@ img {
   padding-top: 2%;
   padding-bottom: 2%;
   margin-top: 1%;
-  border: 2px red solid;
   background-color: #783DAC;
 }
 .four p {
