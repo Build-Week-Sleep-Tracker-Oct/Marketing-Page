@@ -33,6 +33,10 @@
         font-size: 1.6rem;
         color: white;
         text-decoration: none;
+
+      }
+      @media @mobile{
+        width: 80%;
       }
 
     }
@@ -52,10 +56,23 @@
         font-size: .8rem;
         text-align: center;
         padding-bottom: 2%;
+
+        @media @mobile {
+          width: 64%;
+          font-size: 1.6rem;
+          padding-top: 20%;
+          padding-bottom: 10%;
+        }
       }
 
     }
-    
+    @media @mobile {
+      flex-direction: column;
+      align-content: space-around;
+      padding-top: 50%;
+      padding-bottom: 10%;
+
+    }
   }
 
 }
