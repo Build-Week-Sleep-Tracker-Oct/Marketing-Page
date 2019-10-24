@@ -132,13 +132,11 @@ table {
 html {
   font-size: 62.5%;
   color: white;
-  background-color: #431070;
 }
 html,
 body {
   font-family: azo-sans-web, sans-serif;
   color: white;
-  background-color: #431070;
 }
 h1 {
   font-family: azo-sans-web, sans-serif;
@@ -170,10 +168,12 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: -10px;
   padding-top: 3%;
   padding-bottom: 3%;
   padding-left: 4%;
   padding-right: 3%;
+  background-color: #431070;
 }
 .nav-container #somnus {
   font-family: 'Pacifico', cursive;
@@ -225,7 +225,7 @@ img {
   margin-bottom: -190px;
   height: 400px;
   width: 400px;
-  z-index: 0;
+  z-index: 1;
 }
 .footer-container .footer {
   display: flex;
@@ -266,6 +266,7 @@ img {
 }
 .container {
   width: 100%;
+  background-color: #431070;
 }
 .container .topdiv {
   display: flex;
