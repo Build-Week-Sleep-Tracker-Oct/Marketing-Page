@@ -1,5 +1,14 @@
-//mobile media query variable
-@mobile: ~'(max-width: 500px)';
 
-//tablet media query variable
-@tablet: ~'(max-width: 800px)';
+
+//
+.flex(@justify,@align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.padding(@left, @right) {
+    padding-left: @left;
+    padding-right: @right;
+}
+
