@@ -15,17 +15,31 @@
     margin: 0;
 
     .top-text{
-
       width: 62%;
 
       h1{
         width: 80%;
         margin-bottom: 5%;
         margin-top: 5%;
+
+        @media @mobile {
+          font-size: 3rem;
+        }
       }
 
       p{
         width: 90%;
+
+        @media @mobile {
+          font-size: 1.7rem;
+        }
+      }
+
+      @media @mobile {  
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
       }
     }
 
@@ -41,8 +55,16 @@
         //when this is activated the image disappears
         width: 400px;
       }
+
+      @media @mobile {
+        display: none;
+      }
     }
 
+    @media @mobile {
+      padding-bottom: 30%; 
+      
+    }
   }
 
   .laptop{
@@ -50,14 +72,36 @@
     margin-top: -8%;
     height: 100%;
     width: 80%;
+
+    @media @mobile {
+      margin-top: -20%;
+      margin-left: -50%;
+      height: 100%;
+      width:  200%;
+    }
   }
 
   .mid-div{
-    // text-align: center;
+    display: flex;
+    justify-content: center;
     padding-top: 10%;
     padding-bottom: 10%;
     margin: 0 auto;
     width: 95%;
+
+    h2{
+
+      @media @mobile {
+        font-size: 2.3rem;
+        line-height: 1.5;
+        width: 90%;
+      }
+    }
+
+    @media @mobile {
+      padding-top: 20%;
+      padding-bottom: 20%;
+    }
   }
 
   .one{
@@ -67,18 +111,32 @@
     padding-top: 2%;
     padding-bottom: 2%;
     margin-bottom: 2%; 
-    // border: 2px red solid;
     background-color: #783DAC;
 
     img{
       height: 225px;
       width: 225px;
+
+      @media @mobile {
+      }      
+
     }
 
     p{
       width: 30%;
       margin-left: 9%;
       margin-right: 9%;
+
+      @media @mobile {
+        text-align: center;
+        width: 75%;
+      }      
+
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      margin-bottom: 8%; 
     }
   }
 
@@ -90,17 +148,33 @@
     padding-bottom: 7%; 
     margin-top: 2%;
     margin-bottom: 2%; 
-    // border: 2px red solid;
     background-color: #783DAC;
 
     img{
       height: 25%;
       width: 25%;
+
+      @media @mobile {
+        width: 90%;
+        margin-top: 7%;
+        margin-bottom: 7%; 
+      }      
+
     }
 
     p{
-      // text-align: center;
       width: 46%;
+
+      @media @mobile {
+        text-align: center;
+        width: 78%;
+      }      
+    }
+
+    @media @mobile {
+      flex-direction: column-reverse; 
+      margin-top: 8%;
+      margin-bottom: 8%;      
     }
   }
 
@@ -112,7 +186,6 @@
     padding-bottom: 2%; 
     margin-top: 2%;
     margin-bottom: 2%; 
-    // border: 2px red solid;
     background-color: #783DAC;
 
     img{
@@ -122,6 +195,17 @@
 
     p{
       width: 50%;
+
+      @media @mobile {
+        text-align: center;
+        width: 75%;
+      }      
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      margin-top: 8%;
+      margin-bottom: 8%;      
     }
   }
 
@@ -132,11 +216,29 @@
     padding-top: 5%;
     padding-bottom: 5%;
     margin-top: 2%;
-    // border: 2px red solid;
     background-color: #783DAC;
 
     p{
-      width: 40%;
+      width: 35%;
+
+      @media @mobile {
+        text-align: center;
+        width: 93%;
+      }      
+    }
+       
+    img{
+
+      @media @mobile {
+        width: 90%;
+        margin-top: 7%;
+        margin-bottom: 7%; 
+      }     
+    }
+
+    @media @mobile {
+      flex-direction: column-reverse;
+      margin-top: 8%;
     }
   }
 
@@ -144,27 +246,47 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 15%;
+    padding-top: 13%;
     padding-bottom: 0%;
     margin: 0 auto;
     height: 300px;
-    // width: 300px;
-
   
-
     button{
-      display: block;
-      width: 20%;
-      height: 5rem;
-      margin: 2% auto;
+      width: 200px;
+      height: 40px;
+      margin: 0 auto;
       border: none;
       border-radius: 6px; 
       background-color: #4A90E2;
       font-size: 2rem;
       color: white;
       text-align: center; 
+
+      @media @mobile {
+        margin-top: 20%;
+        font-size: 3rem;
+        width: 370px;
+        height: 60px;
+
+      }
+    }
+    
+    h2{
+      margin-bottom: 5%;
+      @media @mobile {
+        width: 100%;
+        font-size: 2.3rem;
+      }
     }
 
+    @media @mobile {
+      margin: 0 auto;
+      padding-right: 6%;
+      padding-left: 6%;
+    }
   }
 
+  @media @mobile {
+    overflow: hidden;
+  }
 }
