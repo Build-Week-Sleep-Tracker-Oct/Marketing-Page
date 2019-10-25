@@ -19,6 +19,7 @@
         width: 80%;
         margin-bottom: 5%;
         margin-top: 5%;
+        line-height: 1.4;
 
         @media @mobile {
           font-size: 3rem;
@@ -28,9 +29,18 @@
       p{
         width: 90%;
 
+        @media @tablet{
+            width: 700px;
+        }
+
         @media @mobile {
           font-size: 1.7rem;
         }
+      }
+
+      @media @tablet {
+        width: 600px;
+        padding-bottom: 9%;
       }
 
       @media @mobile {  
@@ -54,6 +64,11 @@
         width: 400px;
       }
 
+      @media @tablet {
+        display: none;
+
+      }
+
       @media @mobile {
         display: none;
       }
@@ -71,6 +86,12 @@
     height: 100%;
     width: 80%;
 
+    @media @tablet {
+      margin-top: -14%;
+      margin-left: -23%;
+      width:  145%;    
+    }
+
     @media @mobile {
       margin-top: -20%;
       margin-left: -50%;
@@ -86,12 +107,18 @@
     padding-bottom: 10%;
     margin: 0 auto;
     width: 95%;
+    line-height: 1.5;
+
 
     h2{
 
+      @media @tablet{
+        font-size: 2.5rem;
+        width: 70%;
+      }
+
       @media @mobile {
         font-size: 2.3rem;
-        line-height: 1.5;
         width: 90%;
       }
     }
@@ -113,21 +140,31 @@
       height: 225px;
       width: 225px;
 
-      @media @mobile {
-      }      
-
     }
 
     p{
       width: 30%;
       margin-left: 9%;
       margin-right: 9%;
+      padding-top: 2%; 
+
+      @media @tablet {
+        text-align: center;
+        width: 40%;
+      }      
 
       @media @mobile {
         text-align: center;
         width: 75%;
       }      
 
+    }
+
+    @media @tablet{
+      flex-direction: column;
+      margin-bottom: 5%; 
+      padding-top: 3%;
+      padding-bottom: 3%;
     }
 
     @media @mobile {
@@ -138,8 +175,8 @@
 
   .two{
     .flex(space-evenly, center);
-    padding-top: 7%; 
-    padding-bottom: 7%; 
+    padding-top: 4%; 
+    padding-bottom: 4%; 
     margin-top: 2%;
     margin-bottom: 2%; 
     background-color: #783DAC;
@@ -147,6 +184,12 @@
     img{
       height: 25%;
       width: 25%;
+
+      @media @tablet {
+        width: 50%;
+        margin-top: 3%;
+        margin-bottom: 7%; 
+      }      
 
       @media @mobile {
         width: 90%;
@@ -159,10 +202,22 @@
     p{
       width: 46%;
 
+
+      @media @tablet {
+        text-align: center;
+        width: 40%;
+      }      
+
       @media @mobile {
         text-align: center;
         width: 78%;
       }      
+    }
+
+    @media @tablet {
+      flex-direction: column-reverse; 
+      margin-top: 5%;
+      margin-bottom: 5%;      
     }
 
     @media @mobile {
@@ -186,12 +241,28 @@
     }
 
     p{
+      padding-top: 2%; 
       width: 50%;
+
+      @media @tablet {
+        text-align: center;
+        width: 35%;
+      
+      }  
 
       @media @mobile {
         text-align: center;
         width: 75%;
       }      
+    }
+
+    @media @tablet {
+      flex-direction: column;
+      margin-top: 5%;
+      margin-bottom: 5%;   
+      padding-top: 5%;
+      padding-bottom: 5%; 
+    
     }
 
     @media @mobile {
@@ -203,13 +274,18 @@
 
   .four{
     .flex(space-evenly, center);
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     margin-top: 2%;
     background-color: #783DAC;
 
     p{
       width: 35%;
+
+      @media @tablet {
+        text-align: center;
+        width: 60%;
+      }   
 
       @media @mobile {
         text-align: center;
@@ -219,11 +295,24 @@
        
     img{
 
+      @media @tablet {
+        width: 60%;
+        margin-top: 2%;
+        margin-bottom: 2%; 
+      }     
+
       @media @mobile {
         width: 90%;
         margin-top: 7%;
         margin-bottom: 7%; 
       }     
+    }
+
+    @media @tablet {
+      flex-direction: column-reverse;
+      margin-top: 5%;
+      // padding-top: 1%;
+      // padding-bottom: 1%;
     }
 
     @media @mobile {
@@ -252,28 +341,52 @@
       color: white;
       text-align: center; 
 
+      @media @tablet {
+        margin-top: 5%;
+        font-size: 3rem;
+        width: 370px;
+        height: 60px;
+      }
+
       @media @mobile {
         margin-top: 20%;
         font-size: 3rem;
         width: 370px;
         height: 60px;
-
       }
     }
     
     h2{
       margin-bottom: 5%;
+
+      @media @tablet {
+        text-align: center;
+        margin: 0 auto;
+        width: 60%;
+        // font-size: 2.3rem;
+      }
+
       @media @mobile {
-        width: 100%;
+        width: 40%;
         font-size: 2.3rem;
       }
     }
+
+    // @media @tablet {
+    //   margin: 0 auto;
+    //   padding-right: 6%;
+    //   padding-left: 6%;
+    // }
 
     @media @mobile {
       margin: 0 auto;
       padding-right: 6%;
       padding-left: 6%;
     }
+  }
+
+  @media @tablet{
+    overflow: hidden;
   }
 
   @media @mobile {

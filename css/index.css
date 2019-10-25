@@ -169,7 +169,7 @@ img {
   align-items: center;
   width: 100%;
   margin-top: -10px;
-  padding-top: 3%;
+  padding-top: 5%;
   padding-bottom: 3%;
   padding-left: 4%;
   padding-right: 3%;
@@ -218,6 +218,11 @@ img {
   background-color: #FFBA08;
   color: #431070;
 }
+@media (max-width: 1000px) {
+  .nav-container .classnav {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .nav-container .classnav {
     display: none;
@@ -262,6 +267,11 @@ img {
   color: white;
   text-decoration: none;
 }
+@media (max-width: 1000px) {
+  .footer-container .footer .classnav {
+    width: 80%;
+  }
+}
 @media (max-width: 500px) {
   .footer-container .footer .classnav {
     width: 80%;
@@ -282,11 +292,27 @@ img {
   text-align: center;
   padding-bottom: 2%;
 }
+@media (max-width: 1000px) {
+  .footer-container .footer .social h3 {
+    width: 64%;
+    font-size: 1.6rem;
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+}
 @media (max-width: 500px) {
   .footer-container .footer .social h3 {
     width: 64%;
     font-size: 1.6rem;
     padding-top: 20%;
+    padding-bottom: 10%;
+  }
+}
+@media (max-width: 1000px) {
+  .footer-container .footer {
+    flex-direction: column;
+    align-content: space-around;
+    padding-top: 27%;
     padding-bottom: 10%;
   }
 }
@@ -319,6 +345,7 @@ img {
   width: 80%;
   margin-bottom: 5%;
   margin-top: 5%;
+  line-height: 1.4;
 }
 @media (max-width: 500px) {
   .container .topdiv .top-text h1 {
@@ -328,9 +355,20 @@ img {
 .container .topdiv .top-text p {
   width: 90%;
 }
+@media (max-width: 1000px) {
+  .container .topdiv .top-text p {
+    width: 700px;
+  }
+}
 @media (max-width: 500px) {
   .container .topdiv .top-text p {
     font-size: 1.7rem;
+  }
+}
+@media (max-width: 1000px) {
+  .container .topdiv .top-text {
+    width: 600px;
+    padding-bottom: 9%;
   }
 }
 @media (max-width: 500px) {
@@ -348,6 +386,11 @@ img {
 .container .topdiv .moon-image img {
   width: 400px;
 }
+@media (max-width: 1000px) {
+  .container .topdiv .moon-image {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .container .topdiv .moon-image {
     display: none;
@@ -364,6 +407,13 @@ img {
   height: 100%;
   width: 80%;
 }
+@media (max-width: 1000px) {
+  .container .laptop {
+    margin-top: -14%;
+    margin-left: -23%;
+    width: 145%;
+  }
+}
 @media (max-width: 500px) {
   .container .laptop {
     margin-top: -20%;
@@ -379,11 +429,17 @@ img {
   padding-bottom: 10%;
   margin: 0 auto;
   width: 95%;
+  line-height: 1.5;
+}
+@media (max-width: 1000px) {
+  .container .mid-div h2 {
+    font-size: 2.5rem;
+    width: 70%;
+  }
 }
 @media (max-width: 500px) {
   .container .mid-div h2 {
     font-size: 2.3rem;
-    line-height: 1.5;
     width: 90%;
   }
 }
@@ -410,11 +466,26 @@ img {
   width: 30%;
   margin-left: 9%;
   margin-right: 9%;
+  padding-top: 2%;
+}
+@media (max-width: 1000px) {
+  .container .one p {
+    text-align: center;
+    width: 40%;
+  }
 }
 @media (max-width: 500px) {
   .container .one p {
     text-align: center;
     width: 75%;
+  }
+}
+@media (max-width: 1000px) {
+  .container .one {
+    flex-direction: column;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 @media (max-width: 500px) {
@@ -427,8 +498,8 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 7%;
-  padding-bottom: 7%;
+  padding-top: 4%;
+  padding-bottom: 4%;
   margin-top: 2%;
   margin-bottom: 2%;
   background-color: #783DAC;
@@ -436,6 +507,13 @@ img {
 .container .two img {
   height: 25%;
   width: 25%;
+}
+@media (max-width: 1000px) {
+  .container .two img {
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 7%;
+  }
 }
 @media (max-width: 500px) {
   .container .two img {
@@ -447,10 +525,23 @@ img {
 .container .two p {
   width: 46%;
 }
+@media (max-width: 1000px) {
+  .container .two p {
+    text-align: center;
+    width: 40%;
+  }
+}
 @media (max-width: 500px) {
   .container .two p {
     text-align: center;
     width: 78%;
+  }
+}
+@media (max-width: 1000px) {
+  .container .two {
+    flex-direction: column-reverse;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
 @media (max-width: 500px) {
@@ -475,12 +566,28 @@ img {
   width: 225px;
 }
 .container .three p {
+  padding-top: 2%;
   width: 50%;
+}
+@media (max-width: 1000px) {
+  .container .three p {
+    text-align: center;
+    width: 35%;
+  }
 }
 @media (max-width: 500px) {
   .container .three p {
     text-align: center;
     width: 75%;
+  }
+}
+@media (max-width: 1000px) {
+  .container .three {
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 @media (max-width: 500px) {
@@ -494,13 +601,19 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   margin-top: 2%;
   background-color: #783DAC;
 }
 .container .four p {
   width: 35%;
+}
+@media (max-width: 1000px) {
+  .container .four p {
+    text-align: center;
+    width: 60%;
+  }
 }
 @media (max-width: 500px) {
   .container .four p {
@@ -508,11 +621,24 @@ img {
     width: 93%;
   }
 }
+@media (max-width: 1000px) {
+  .container .four img {
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
 @media (max-width: 500px) {
   .container .four img {
     width: 90%;
     margin-top: 7%;
     margin-bottom: 7%;
+  }
+}
+@media (max-width: 1000px) {
+  .container .four {
+    flex-direction: column-reverse;
+    margin-top: 5%;
   }
 }
 @media (max-width: 500px) {
@@ -541,6 +667,14 @@ img {
   color: white;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .container .btmdiv button {
+    margin-top: 5%;
+    font-size: 3rem;
+    width: 370px;
+    height: 60px;
+  }
+}
 @media (max-width: 500px) {
   .container .btmdiv button {
     margin-top: 20%;
@@ -552,9 +686,16 @@ img {
 .container .btmdiv h2 {
   margin-bottom: 5%;
 }
+@media (max-width: 1000px) {
+  .container .btmdiv h2 {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+  }
+}
 @media (max-width: 500px) {
   .container .btmdiv h2 {
-    width: 100%;
+    width: 40%;
     font-size: 2.3rem;
   }
 }
@@ -563,6 +704,11 @@ img {
     margin: 0 auto;
     padding-right: 6%;
     padding-left: 6%;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    overflow: hidden;
   }
 }
 @media (max-width: 500px) {
