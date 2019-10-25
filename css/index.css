@@ -137,6 +137,7 @@ html,
 body {
   font-family: azo-sans-web, sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 h1 {
   font-family: azo-sans-web, sans-serif;
@@ -229,64 +230,12 @@ img {
     display: none;
   }
 }
-.nav-container .hamburger-section {
-  position: fixed;
-  top: 10%;
-  right: 0;
-  height: 200px;
+.nav-container .tablet-and-mobile {
+  display: none;
 }
-.nav-container .hamburger-section .close-hamburger-moon {
-  display: inline;
-  position: fixed;
-  top: 10%;
-  right: 0;
-  width: 115px;
-}
-@media (max-width: 1000px) {
-  .nav-container .hamburger-section .close-hamburger-moon {
-    display: block;
-    width: 135px;
-  }
-}
-@media (max-width: 530px) {
-  .nav-container .hamburger-section .close-hamburger-moon {
-    display: block;
-    width: 125px;
-  }
-}
-.nav-container .hamburger-section .hamburger {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}
-.nav-container .hamburger-section .hamburger a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 2rem;
-  padding-top: 10%;
-  padding-bottom: 15%;
-}
-.nav-container .hamburger-section .hamburger .hamburger-creds {
-  display: flex;
-}
-.nav-container .hamburger-section .hamburger .hamburger-creds #sign-up {
+.nav-container .tablet-and-mobile #sign-in {
   font-size: 2.4rem;
   width: 200px;
-  text-decoration: none;
-  margin-right: 2%;
-  margin-left: 2%;
-  padding-right: 5%;
-  padding-left: 5%;
-  border: solid;
-  border-radius: 4px;
-  background: none;
-  color: #FFBA08;
-}
-.nav-container .hamburger-section .hamburger .hamburger-creds #sign-in {
-  font-size: 2.4rem;
-  width: 200px;
-  text-decoration: none;
   margin-right: 0%;
   margin-left: 2%;
   padding-right: 5%;
@@ -296,6 +245,33 @@ img {
   color: #431070;
   background-color: #FFBA08;
   box-shadow: 0 12px 12px -15px black;
+}
+.nav-container .tablet-and-mobile #sign-in a {
+  text-decoration: none;
+  color: white;
+}
+.nav-container .tablet-and-mobile #sign-up {
+  font-size: 2.4rem;
+  width: 200px;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  border: solid;
+  border-radius: 4px;
+  background: none;
+  color: #FFBA08;
+}
+.nav-container .tablet-and-mobile #sign-up a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 1000px) {
+  .nav-container .tablet-and-mobile {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+  }
 }
 @media (max-width: 530px) {
   .nav-container {
