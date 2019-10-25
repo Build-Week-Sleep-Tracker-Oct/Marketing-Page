@@ -40,33 +40,81 @@
         padding-top: 11%;
         padding-bottom: 11%;
         font-size: 2.3rem;
+        
+        @media @mobile{
+          width: 70%;
+          margin: 0 auto;
+        }
       }
 
       .field{
         display: flex;
 
-            #name-subject{
+        #name-subject{
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-           margin-right: 5%;
-        
+          margin-right: 5%;
+
+          label{
+            font-size: 2rem;
+            
+            @media @tablet{
+              margin: 0 auto;
+            }
+          }
+  
+          input{
+            width: 400px;
+            height: 50px;
+            margin-top: 9%;
+            margin-bottom: 9%;
+
+            @media @tablet{
+              width: 340px;
+            }
+          }
+
+          @media @tablet{
+            margin-right: 0%;
+
+          }
         }
 
         #mail{
           display: flex;
           flex-direction: column;
+
+          label{
+            font-size: 2rem;
+
+            @media @tablet{
+              margin: 0 auto;
+              justify-content: space-around;
+            }
+          }
+  
+          input{
+            width: 400px;
+            height: 50px;
+            margin-top: 9%;
+            margin-bottom: 9%;
+
+            @media @tablet{
+              width: 340px;
+            }
+          }
         }
 
-        label{
-          font-size: 2rem;
+        @media @tablet{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
         }
 
-        input{
-          width: 400px;
-          height: 50px;
-          margin-top: 9%;
-          margin-bottom: 9%;
+        @media @mobile{
+          justify-content: center;
         }
       }
 
@@ -77,15 +125,30 @@
         label{
           font-size: 2rem;
         }
+
         textarea{
           height: 300px;
           margin-top: 3%;
+
+          @media @tablet{
+            width: 340px;
+            margin-bottom: 20%;
+
+          }
         }
 
+        @media @mobile{
+          margin-bottom: 20%;          
+        }
       }
-
     }
 
+    @media @mobile{
+      border-radius: 15px;
+    }
   }
 
+  @media @mobile{
+    background-color: #431070;
+  }
 }

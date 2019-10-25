@@ -250,6 +250,25 @@ img {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 380px) {
+  .nav-container .tablet-and-mobile #sign-in a {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-container .tablet-and-mobile #sign-in {
+    width: 120px;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
+@media (max-width: 380px) {
+  .nav-container .tablet-and-mobile #sign-in {
+    width: 90px;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
 .nav-container .tablet-and-mobile #sign-up {
   font-size: 2.4rem;
   width: 200px;
@@ -266,11 +285,30 @@ img {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 380px) {
+  .nav-container .tablet-and-mobile #sign-up a {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-container .tablet-and-mobile #sign-up {
+    width: 120px;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
+@media (max-width: 380px) {
+  .nav-container .tablet-and-mobile #sign-up {
+    width: 90px;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
 @media (max-width: 1000px) {
   .nav-container .tablet-and-mobile {
     display: flex;
     width: 450px;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 }
 @media (max-width: 530px) {
@@ -372,6 +410,8 @@ img {
 .container {
   width: 100%;
   background-color: #431070;
+  position: relative;
+  overflow: hidden;
 }
 .container .topdiv {
   display: flex;
@@ -385,6 +425,7 @@ img {
 }
 .container .topdiv .top-text {
   width: 62%;
+  align-items: flex-start;
 }
 .container .topdiv .top-text h1 {
   width: 600px;
@@ -406,6 +447,7 @@ img {
 }
 .container .topdiv .top-text p {
   width: 671px;
+  padding-bottom: 5%;
 }
 @media (max-width: 1000px) {
   .container .topdiv .top-text p {
@@ -433,26 +475,25 @@ img {
     width: 100%;
   }
 }
-.container .topdiv .moon-image {
-  overflow: hidden;
-  position: relative;
-}
-.container .topdiv .moon-image img {
-  width: 400px;
-}
-@media (max-width: 1000px) {
-  .container .topdiv .moon-image {
-    display: none;
-  }
-}
-@media (max-width: 530px) {
-  .container .topdiv .moon-image {
-    display: none;
-  }
-}
 @media (max-width: 530px) {
   .container .topdiv {
     padding-bottom: 30%;
+  }
+}
+.container #moon-image {
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 32.2%;
+}
+@media (max-width: 1000px) {
+  .container #moon-image {
+    display: none;
+  }
+}
+@media (max-width: 530px) {
+  .container #moon-image {
+    display: none;
   }
 }
 .container .laptop {

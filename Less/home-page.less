@@ -3,6 +3,8 @@
 .container{
   width: 100%;
   background-color: #431070;
+  position: relative;
+  overflow: hidden;
 
   .topdiv{
     .flex(space-between, center);
@@ -14,6 +16,7 @@
 
     .top-text{
       width: 62%;
+      align-items: flex-start;
       // height: 34%;
 
       h1{
@@ -37,6 +40,8 @@
 
       p{
         width: 671px;
+        padding-bottom: 5%;
+
 
         @media @tablet{
           font-size: 1.8rem;
@@ -63,33 +68,25 @@
       }
     }
 
-    .moon-image{
-      overflow: hidden;
-      position: relative;
-      // right: -50px;
-      // this stretches the width of the page
-      // border: 2px solid red;
-
-      img{
-        // position: absolute;
-        //when this is activated the image disappears
-        width: 400px;
-      
-      }
-
-      @media @tablet {
-        display: none;
-
-      }
-
-      @media @mobile {
-        display: none;
-      }
-    }
-
+    
     @media @mobile {
       padding-bottom: 30%; 
       
+    }
+  }
+
+  #moon-image{
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 32.2%;
+
+    @media @tablet {
+      display: none;
+    }
+
+    @media @mobile {
+      display: none;
     }
   }
 
