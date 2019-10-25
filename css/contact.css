@@ -250,6 +250,11 @@ img {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 1000px) {
+  .nav-container .tablet-and-mobile #sign-in {
+    width: 120px;
+  }
+}
 .nav-container .tablet-and-mobile #sign-up {
   font-size: 2.4rem;
   width: 200px;
