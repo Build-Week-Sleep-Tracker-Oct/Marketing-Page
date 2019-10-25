@@ -54,9 +54,16 @@
       padding-left: 5%;
       border: #FFBA08 solid;
       border-radius: 4px;
-      background-color: #FFBA08;
       color: #431070;
+      background-color: #FFBA08;
+      box-shadow: 0 12px 12px -15px black;
+      // pointer-events: none;
+
+      // @media all and (max-width: 530px){
+      //   pointer-events: all
+      // }
     }
+
 
     @media @tablet {
       display: none;
@@ -67,6 +74,88 @@
     }
   }
 
+  #hamburger-moon{
+
+
+  }
+
+  .hamburger-section{
+    position: fixed;
+    top: 10%;
+    right: 0;
+    height: 200px;
+    // display: none;
+
+    .close-hamburger-moon{
+      display: inline;
+      position: fixed;
+      top: 10%;
+      right: 0;
+      width: 115px;
+
+      @media @tablet{
+        display: block;
+        width: 135px;
+      }
+
+      @media @mobile {
+        display: block;
+        width: 125px;
+      }
+    }
+
+    .hamburger{
+      display: flex;
+      flex-direction: column; 
+      align-content: space-between;
+
+      a{
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        font-size: 2rem;
+        padding-top: 10%;
+        padding-bottom: 15%;
+      }
+
+      .hamburger-creds{
+        display: flex;
+
+        #sign-up{
+          font-size: 2.4rem;
+          width: 200px;
+          text-decoration: none;
+          margin-right: 2%;
+          margin-left: 2%;
+          padding-right: 5%;
+          padding-left: 5%;
+          border: solid;
+          border-radius: 4px;
+          background: none;
+          color: #FFBA08;
+        }
+        #sign-in{
+          font-size: 2.4rem;
+          width: 200px;
+          text-decoration: none;
+          margin-right: 0%;
+          margin-left: 2%;
+          padding-right: 5%;
+          padding-left: 5%;
+          border: #FFBA08 solid;
+          border-radius: 4px;
+          color: #431070;
+          background-color: #FFBA08;
+          box-shadow: 0 12px 12px -15px black;
+        }
+      }
+
+      .hamburger-social{
+
+      }
+    }
+  }
+  
   @media @mobile {
     padding-top: 10%;
     max-width: 100%;
