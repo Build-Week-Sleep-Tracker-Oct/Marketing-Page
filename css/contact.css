@@ -137,6 +137,7 @@ html,
 body {
   font-family: azo-sans-web, sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 h1 {
   font-family: azo-sans-web, sans-serif;
@@ -218,12 +219,6 @@ img {
   color: #431070;
   background-color: #FFBA08;
   box-shadow: 0 12px 12px -15px black;
-  pointer-events: none;
-}
-@media all and (max-width: 530px) {
-  .nav-container .classnav #sign-in {
-    pointer-events: all;
-  }
 }
 @media (max-width: 1000px) {
   .nav-container .classnav {
@@ -235,23 +230,48 @@ img {
     display: none;
   }
 }
-.nav-container #hamburger-moon {
+.nav-container .tablet-and-mobile {
   display: none;
+}
+.nav-container .tablet-and-mobile #sign-in {
+  font-size: 2.4rem;
+  width: 200px;
+  margin-right: 0%;
+  margin-left: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  border: #FFBA08 solid;
+  border-radius: 4px;
+  color: #431070;
+  background-color: #FFBA08;
+  box-shadow: 0 12px 12px -15px black;
+}
+.nav-container .tablet-and-mobile #sign-in a {
+  text-decoration: none;
+  color: white;
+}
+.nav-container .tablet-and-mobile #sign-up {
+  font-size: 2.4rem;
+  width: 200px;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  border: solid;
+  border-radius: 4px;
+  background: none;
+  color: #FFBA08;
+}
+.nav-container .tablet-and-mobile #sign-up a {
+  text-decoration: none;
+  color: white;
 }
 @media (max-width: 1000px) {
-  .nav-container #hamburger-moon {
-    display: block;
-    width: 135px;
+  .nav-container .tablet-and-mobile {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
   }
-}
-@media (max-width: 530px) {
-  .nav-container #hamburger-moon {
-    display: block;
-    width: 125px;
-  }
-}
-.nav-container .hamburger {
-  display: none;
 }
 @media (max-width: 530px) {
   .nav-container {
