@@ -264,7 +264,7 @@ img {
 }
 @media (max-width: 380px) {
   .nav-container .tablet-and-mobile #sign-in {
-    width: 100px;
+    width: 90px;
     padding-right: 0%;
     padding-left: 0%;
   }
@@ -299,7 +299,7 @@ img {
 }
 @media (max-width: 380px) {
   .nav-container .tablet-and-mobile #sign-up {
-    width: 100px;
+    width: 90px;
     padding-right: 0%;
     padding-left: 0%;
   }
@@ -425,6 +425,7 @@ img {
 }
 .container .topdiv .top-text {
   width: 62%;
+  align-items: flex-start;
 }
 .container .topdiv .top-text h1 {
   width: 600px;
@@ -446,6 +447,7 @@ img {
 }
 .container .topdiv .top-text p {
   width: 671px;
+  padding-bottom: 5%;
 }
 @media (max-width: 1000px) {
   .container .topdiv .top-text p {
@@ -479,7 +481,10 @@ img {
   }
 }
 .container #moon-image {
-  width: 500px;
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 32.2%;
 }
 @media (max-width: 1000px) {
   .container #moon-image {
