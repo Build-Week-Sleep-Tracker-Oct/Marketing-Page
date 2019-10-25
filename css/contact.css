@@ -250,9 +250,23 @@ img {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 380px) {
+  .nav-container .tablet-and-mobile #sign-in a {
+    font-size: 1.9rem;
+  }
+}
 @media (max-width: 1000px) {
   .nav-container .tablet-and-mobile #sign-in {
     width: 120px;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
+@media (max-width: 380px) {
+  .nav-container .tablet-and-mobile #sign-in {
+    width: 90px;
+    padding-right: 0%;
+    padding-left: 0%;
   }
 }
 .nav-container .tablet-and-mobile #sign-up {
@@ -271,11 +285,30 @@ img {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 380px) {
+  .nav-container .tablet-and-mobile #sign-up a {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-container .tablet-and-mobile #sign-up {
+    width: 120px;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
+@media (max-width: 380px) {
+  .nav-container .tablet-and-mobile #sign-up {
+    width: 90px;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
 @media (max-width: 1000px) {
   .nav-container .tablet-and-mobile {
     display: flex;
     width: 450px;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 }
 @media (max-width: 530px) {
